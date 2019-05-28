@@ -14,8 +14,8 @@ class <%= migration_class_name %> < ActiveRecord::Migration<%= migration_version
       t.string :city
       t.string :region
       t.string :country
-      t.decimal :latitude, precision: 8, scale: 6
-      t.decimal :longitude, precision: 9, scale: 6
+      t.float :latitude
+      t.float :longitude
       t.datetime :created_at
     end
 
